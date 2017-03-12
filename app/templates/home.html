@@ -1,14 +1,13 @@
 <section class="hero-content">
-    
+    <br>
     <h1 class="hero-title">Bloc Chat</h1>
-    <button  type="button" class="btn btn-primary" ng-click="home.addRoom()">New Chat Room</button>
-        
-
-    
-    
+   
+    <button type="button" class="new-chat btn btn-primary" ng-click="home.openModal();">New Chat Room </button>
+    <br>    
    <section class="rm-list">
+       <br>
            <div class="rms" ng-repeat="room in home.rooms">
-                    {{ room.$value }}
+                {{ room.name }}
             </div>
     </section>
     

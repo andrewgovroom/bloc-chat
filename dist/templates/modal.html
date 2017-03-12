@@ -1,13 +1,18 @@
-
+<section class="modal-box">
     <div class="modal-header">
-        <h3 class="modal-title">Create a new room!</h3>
+        <h3 class="modal-title">Create New Chat Room</h3>
     </div>
+    
     <div class="modal-body">
-        <!-- push a new room onto the array -->
-        Name: <input ng-model="newRoomName" />
+        <h4 class="modal-prompt">Please Enter Chat Room Name</h4>
+        <input type="text" name="input" ng-model="modal.newRoom.name">
     </div>
+    
     <div class="modal-footer">
-        <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
-        <button class="btn btn-primary" type="button" ng-click="create()">Create</button>
+        
+        <button class="btn btn-danger" type="button" ng-click="modal.cancel()">Cancel</button>
+        <button class="btn btn-success" type="button" ng-click="modal.submit()">Create Room</button>
+        
     </div>
-
+    
+</section>
