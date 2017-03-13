@@ -1,13 +1,22 @@
-.hero-content {
+.chat-nav {
     background-color: #d5d4d5;
     text-align: center;
-    position: fixed;
-    width: 20%;
+    float: left;
+    overflow: hidden;
+    width: 15%;
     top: 0px;
     left: 0px;
-    height: 100%;
+    height: 100vh;
+
     
 }
 
+.chat-container {
+    position: relative;
+    overflow: hidden;
+    display: inline;
+    top: 20px;
+    left: 30px;
 
+}
 

@@ -1,7 +1,8 @@
 (function() {
      function HomeCtrl(Room, $uibModal) {
-         this.rooms = Room.all;
          
+         this.rooms = Room.all;
+              
          this.openModal = function() {
             $uibModal.open({
                 templateUrl: '/templates/modal.html',
@@ -9,6 +10,12 @@
                 controller: 'ModalCtrl as modal'
             });
          }
+         
+          this.loadRoom = function(room) {
+              this.r1 = room;
+          }
+         
+         
      }
  
      angular
