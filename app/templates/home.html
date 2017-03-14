@@ -16,8 +16,10 @@
 
     <section class="chat-container">
         <h1 class="chat-room">{{home.r1}}</h1> 
-        
-
+        <div class="messages" ng-repeat="message in home.messages"></div>
+        <div class="user-message">{{ message.content }}</div>
+        <div class="timestamp">{{ message.sentAt }}</div>
+        <div class="username">{{ message.username }}</div>
     </section>
 
 
