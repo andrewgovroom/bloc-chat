@@ -13,9 +13,9 @@
          
           this.loadRoom = function(room) {
               this.r1 = room;
-               console.log(this.r1);
+//               console.log(this.r1.$id);
               this.messages = Message.getByRoomId(this.r1.$id);
-             
+             console.log(this.messages);
             
           }
          
