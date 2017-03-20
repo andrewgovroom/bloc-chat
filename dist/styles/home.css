@@ -1,22 +1,69 @@
 .chat-nav {
-    background-color: #d5d4d5;
+   
+    background-color:lightgrey;
     text-align: center;
     float: left;
     overflow: hidden;
-    width: 15%;
-    top: 0px;
-    left: 0px;
+    width: 25%;
     height: 100vh;
-
+    position: relative;
+    z-index: 1;
     
 }
 
+
+.chat-title {
+  position: relative;
+  font-family: fantasy;
+
+}
+
+#rm-title {
+    
+    background-color:lightslategray;
+    height: 20vh;
+    
+     
+}
+
 .chat-container {
+    
     position: relative;
     overflow: hidden;
     display: inline;
     top: 20px;
-    left: 30px;
+    left: 30px;  
+    z-index: -1;
+   
+}
 
+.messages {
+    font-family: sans-serif;
+}
+
+#mu {
+    font-family: sans-serif;
+    font-weight: bold;
+    color:darkblue;
+}
+
+#ms {
+    color:red;
+}
+
+#mc {
+    font-family: serif;
+}
+
+.rn1 {
+    font-family:sans-serif;
+    font-weight: bold;
+}
+
+.chat-room {
+    color: whitesmoke;
+    font-family: fantasy;
+    position: relative;
+    top: 35px;
 }
 
